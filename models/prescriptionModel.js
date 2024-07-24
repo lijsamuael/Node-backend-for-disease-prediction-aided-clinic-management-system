@@ -5,9 +5,9 @@ const { sequelize } = require("../config/dbConnection");
 const Prescription = sequelize.define("Prescription", {
   id: {
     type: Sequelize.INTEGER,
-   autoIncrement: true,
-   primaryKey: true,
-  },  
+    autoIncrement: true,
+    primaryKey: true,
+  },
   patientId: {
     type: Sequelize.STRING(255),
     allowNull: false,
@@ -32,5 +32,9 @@ const Prescription = sequelize.define("Prescription", {
     type: Sequelize.STRING(255),
     allowNull: false,
   },
+  // payed: {
+  //   type: Sequelize.BOOLEAN,
+  //   allowNull: true,
+  // },
 });
 module.exports = { Prescription, sequelize };

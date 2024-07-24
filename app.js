@@ -21,6 +21,8 @@ const labRoutes = require("./routes/labRoutes");
 const imageRoutes = require("./routes/uploadImage");
 const financeRoutes = require("./routes/financeRoutes");
 const treatmentRoutes = require("./routes/treatmentRoutes");
+const emergencyRoutes = require("./routes/emergencyRoute");
+
 app.use(express.json());
 
 const bodyParser = require("body-parser");
@@ -44,3 +46,4 @@ app.use("/labratories", labRoutes);
 app.use("/upload", imageRoutes);
 app.use("/finances", financeRoutes);
 app.use("/treatments", treatmentRoutes);
+app.use("/emergencies", emergencyRoutes);

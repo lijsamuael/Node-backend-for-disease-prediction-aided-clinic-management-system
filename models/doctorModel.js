@@ -57,13 +57,13 @@ const Doctor = sequelize.define("Doctor", {
   },
 });
 
-sequelize
-  .sync()
-  .then(() => {
-    console.log("Doctor table created!");
-  })
-  .catch((err) => {
-    console.error("Error creating doctor table:", err);
-  });
+// sequelize
+//   .sync()
+//   .then(() => {
+//     console.log("Doctor table created!");
+//   })
+//   .catch((err) => {
+//     console.error("Error creating doctor table:", err);
+//   });
 
 module.exports = { Doctor, sequelize };
